@@ -1,0 +1,10 @@
+SQL> desc STUDENT_REGISTRATION;
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ SNO                                                   NOT NULL NUMBER(10)
+ SNAME                                                          VARCHAR2(30)
+ SADD                                                           VARCHAR2(30)
+ DOB                                                            DATE
+ SMARK                                                          NUMBER(7,2)
+ TMARK                                                          NUMBER(7,2)
+ CGPA                                                           NUMBER(7,2)
