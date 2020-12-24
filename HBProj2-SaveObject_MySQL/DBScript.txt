@@ -1,0 +1,9 @@
+Table: student_registration
+Columns:
+SNO int(11) AI PK 
+SNAME varchar(25) 
+SADD varchar(25) 
+DOB date 
+SMARK float 
+TMARK float 
+CGPA float
