@@ -1,0 +1,9 @@
+SQL> desc CORONA_REGISTER_TAB;
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ PID                                                   NOT NULL NUMBER(10)
+ PNAME                                                          VARCHAR2(10)
+ PADD                                                           VARCHAR2(10)
+ PAGE                                                           NUMBER(3)
+ PSEX                                                           VARCHAR2(10)
+ PSTAGE                                                         VARCHAR2(10)
