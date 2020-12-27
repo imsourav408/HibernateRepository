@@ -4,7 +4,7 @@
 	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 	
 	<hibernate-mapping>
-		<class name="com.nt.entity.Patient" table="CORONA_REGISTER_TAB" lazy="false">
+		<class name="com.nt.entity.Patient" table="CORONA_REGISTER_TAB" lazy="true" proxy="com.nt.entity.Entity">
 			<id name="pid" column="PID">
 				<generator class="increment"/>
 			</id>
