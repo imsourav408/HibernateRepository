@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+		<!-- When class name and table name are same then no need to specify table attribute -->
+		<class name="com.nt.entity.Employee" dynamic-insert="true" dynamic-update="true">
+			<!-- When entity object property name and table column name are same then no need to specify column attribute -->
+			<!-- <id name="eno"/> -->
+			<id name="eno" unsaved-value="1011"/>
+			<!-- <id name="eno" unsaved-value="1011">
+				<generator class="increment"/>
+			</id> -->
+			<property name="ename"/>
+			<property name="eadd"/>
+			<property name="dob"/>
+		</class>
+	</hibernate-mapping>
