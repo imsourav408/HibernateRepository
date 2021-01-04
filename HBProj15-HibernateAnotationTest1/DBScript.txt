@@ -1,0 +1,7 @@
+SQL> desc employee;
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ ENO                                                            NUMBER(10)
+ ENAME                                                          VARCHAR2(30)
+ EADD                                                           VARCHAR2(30)
+ DOB                                                            DATE
