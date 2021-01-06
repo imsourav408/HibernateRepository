@@ -49,6 +49,10 @@ public class AnnotationSchemaGenerationTest {
 				transaction.rollback();
 				System.out.println("Employee details submission failed");
 			}
+			//close session
+			HibernateUtil.closeSession(session);
+			//close session fatory
+			HibernateUtil.closeSessionFactory();
 		}
 	}
 }
