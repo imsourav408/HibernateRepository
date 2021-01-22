@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+		<class name="com.nt.entity.Employee" table="Employee" dynamic-insert="true" dynamic-update="true">
+			<id name="eno" column="ENO">
+				<generator class="assigned"/>
+				<!-- <generator class="increment"/> -->
+				<!-- <generator class="identity"/> -->
+				<!-- <generator class="sequence"/> -->
+				<!-- <generator class="sequence">
+					<param name="sequence">STUDENT_SEQ</param>
+				</generator> -->
+				<!-- <generator class="hilo"/> -->
+				<!-- <generator class="hilo">
+					<param name="max_lo">5</param>
+				</generator> -->
+				<!-- <generator class="hilo">
+					<param name="table">HI_TAB</param>
+					<param name="column">HI_COL</param>
+					<param name="max_lo">5</param>
+				</generator> -->
+				<!-- <generator class="seqhilo">
+					<param name="max_lo">10</param>
+				</generator> -->
+				<!-- <generator class="seqhilo">
+					<param name="sequence">CORONA_SEQ</param>
+					<param name="max_lo">10</param>
+				</generator> -->
+				<!-- <generator class="native"/> -->
+				<!-- <generator class="native">
+					<param name="sequence_name">CORONA_SEQ</param>
+				</generator> -->
+				<!-- <generator class="select">
+					<param name="key">param</param>
+				</generator> -->
+			</id>
+			<property name="ename" column="ENAME"/>
+			<property name="eadd" column="EADD"/>
+			<property name="dob" column="DOB"/>
+		</class>
+	</hibernate-mapping>
