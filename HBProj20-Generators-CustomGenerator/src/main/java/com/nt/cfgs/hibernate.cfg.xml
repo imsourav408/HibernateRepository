@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+        <hibernate-configuration>
+        	<session-factory>
+        		<!-- configure connection properties -->
+        		<!-- oracle -->
+        		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        		<property name="hibernate.connection.username">scott</property>
+        		<property name="hibernate.connection.password">tiger</property>
+        		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        		<!-- MySql -->
+        		<!-- <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        		<property name="hibernate.connection.url">jdbc:mysql:///sourav</property>
+        		<property name="hibernate.connection.username">root</property>
+        		<property name="hibernate.connection.password">root</property>
+        		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property> -->
+        		<!-- configure hibernate properties -->
+        		<property name="hibernate.hbm2ddl.auto">update</property>
+        		<property name="hibernate.show_sql">true</property>
+        		<property name="hibernate.format_sql">true</property>
+        		<property name="hibernate.transaction.factory_class">jdbc</property>
+        		<!-- configure mapping resource -->
+        		<mapping resource="com/nt/entity/Production.hbm.xml"/>
+        	</session-factory>
+        </hibernate-configuration>
